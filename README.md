@@ -1,4 +1,6 @@
 <div align="center">
+  <a name="top"></a>
+
  <h1>🗺️ { <strong>React HERE Map</strong> } 🗺️</h1>
 
 [![npm](https://img.shields.io/npm/dt/react-here-map?color=red&label=NPM%20downloads)](https://www.npmjs.com/package/react-here-map)
@@ -8,7 +10,7 @@
 [![GitHub license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)<br><br>
 [![](https://img.shields.io/badge/🍔-Hamburger-yellow)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-## </div>
+</div>
 
 React library for rendering and working with
 [HERE Maps](https://www.here.com/).
@@ -35,7 +37,9 @@ configuration and modifications.
 <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 <img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>
+
 </div>
+
 <br>
 
 ## **👀 / Overview**
@@ -43,7 +47,7 @@ configuration and modifications.
 Since the creation of this library, many features have been added. At this point in time the following features are present and usable:
 
 ```
-1. Display an (interactive) map in your webapp
+1. Display a (interactive) map in your webapp
 2. Add (custom styled) markers, lines, circles, etc. to the map
 3. Calculate and show routes between different coordinates
 4. Calculate and show isochrone views by duration, distance or fuel consumption
@@ -56,7 +60,7 @@ Since the creation of this library, many features have been added. At this point
 
 <div align="center">
 <pre>
-<a href="https://coffee-it-development.github.io/react-here-map/">Demo</a>
+<a href="https://coffee-it-development.github.io/react-here-map/" target="_blank">Demo</a>
 🚧 Work in Progress 🚧
 </pre>
 </div>
@@ -359,11 +363,14 @@ All direct children of the `HMap` component receive:
 > but still holds the same object references
 
 <br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### **HMapMarker**
 
@@ -411,11 +418,14 @@ export default Map;
 | **options**       | [Officially documented Options](https://developer.here.com/documentation/maps/topics_api/h-map-marker-options.html) |                                 object                                  |       -        |
 
 <br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapMarkers
 
@@ -467,11 +477,14 @@ export default Map;
 | **options**       | [Officially documented Options](https://developer.here.com/documentation/maps/topics_api/h-map-marker-options.html) |                       object                        |       -        |
 
 <br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapPolyline
 
@@ -515,11 +528,14 @@ export default Map;
 | **setViewBounds** | Centers the Polyline on the map                                                                                     | object |    `true`     |
 
 <br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapPolygon
 
@@ -574,11 +590,14 @@ export default Map;
 | **setViewBounds** | Centers the Polygon on the map                                                                                     | object |    `true`     |
 
 <br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapCircle
 
@@ -625,11 +644,15 @@ function Map() {
 export default Map;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapRectangle
 
@@ -677,11 +700,15 @@ function Map() {
 export default Map;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 ### Event Handling
 
@@ -847,11 +874,15 @@ const markerIcon =
 </HPlatform>;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapGeoCode
 
@@ -1020,11 +1051,15 @@ const landmarkSearchParameters = {
 </HPlatform>;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapRoute
 
@@ -1305,11 +1340,15 @@ const RouteMarkerIso = ({
 </HPlatform>;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapLayer
 
@@ -1379,11 +1418,15 @@ function Map() {
 export default Map;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 #### HMapPlaces
 
@@ -1441,11 +1484,15 @@ import { HPlatform, HMap, HMapPlaces } from 'react-here-map';
 </HPlatform>;
 ```
 
+<br>
+
 <div align="right">
 
 <strong><a href="#components"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
+
+---
 
 ## **🧑‍💻 / Authors**
 
@@ -1498,6 +1545,6 @@ This project has been created under the MIT License.
 
 <br><br>
 
-<strong><a href="#----"> ⬆️ Back to Top ⬆️</a></strong>
+<strong><a href="#top"> ⬆️ Back to Top ⬆️</a></strong>
 
 </div>
