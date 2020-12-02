@@ -8,23 +8,21 @@ function Marker(props) {
   const {
     coords,
     icon,
-    type,
+    DOM,
     options,
     marker,
     getMarker,
-    updateWaypoints,
     updateMarker,
     draggable,
     setViewBounds,
     animated,
     objectEvents,
     group,
-    platform,
     map,
-    ui,
     __options
   } = merge(
     {
+      DOM: false,
       marker: null,
       getMarker() {},
       updateWaypoints() {},
@@ -64,12 +62,11 @@ function Marker(props) {
   }
 
   function createIcon() {
-    if (icon && type === 'DOM') {
-      // Displays a DOM Icon
-      _options.icon = new H.map.DomIcon(icon);
-    } else if (icon) {
+    if (icon) {
+      // Displays a DOM icon
+      if (DOM) _options.icon = new H.map.DomIcon(icon);
       // Displays a static icon
-      _options.icon = new H.map.Icon(icon);
+      else _options.icon = new H.map.Icon(icon);
     }
   }
 
@@ -108,6 +105,7 @@ function Marker(props) {
     }
 
     // Send the Marker to the parent
+    // eslint-disable-next-line no-unused-expressions
     !marker ? getMarker(_marker) : null;
 
     if (setViewBounds) {
@@ -122,16 +120,16 @@ function Marker(props) {
 Marker.propTypes = {
   coords: PropTypes.object.isRequired,
   icon: PropTypes.any,
-  type: PropTypes.string,
+  DOM: PropTypes.bool,
   options: PropTypes.object,
   marker: PropTypes.object,
   getMarker: PropTypes.func,
   updateMarker: PropTypes.func,
   setViewBounds: PropTypes.bool,
+  animated: PropTypes.bool,
   objectEvents: PropTypes.object,
-  platform: PropTypes.object,
+  group: PropTypes.object,
   map: PropTypes.object,
-  ui: PropTypes.object,
   __options: PropTypes.object
 };
 

@@ -1,6 +1,7 @@
 export declare function HPlatform(options?: HPlatformTyping): JSX.Element;
 export declare function HMap(options?: HMapTyping): JSX.Element;
 export declare function HMapMarker(options?: HMapMarkerTyping): JSX.Element;
+export declare function HMapMarkers(options?: HMapMarkersTyping): JSX.Element;
 export declare function HMapPolyline(options?: HMapPolylineTyping): JSX.Element;
 export declare function HMapCircle(options?: HMapCircleTyping): JSX.Element;
 export declare function HMapRectangle(
@@ -11,9 +12,8 @@ export declare function HMapRoute(options?: HMapRouteTyping): JSX.Element;
 export declare function HMapPlaces(options?: HMapPlacesTyping): JSX.Element;
 export declare function HMapGeoCode(options?: HMapGeoCodeTyping): JSX.Element;
 export declare function HMapLayer(options?: HMapLayerTyping): JSX.Element;
-export declare function LatLng(setting: LatLng): void;
 
-interface LatLng {
+export declare interface LatLng {
   lat: number;
   lng: number;
 }
@@ -45,7 +45,16 @@ type HMapMarkerTyping = Pick<React.HTMLProps<HTMLElement>, any> & {
   coords: LatLng;
   icon?: string;
   options?: object;
-  type?: string;
+  DOM?: string;
+  setViewBounds?: boolean;
+  animated?: boolean;
+};
+
+type HMapMarkersTyping = Pick<React.HTMLProps<HTMLElement>, any> & {
+  points: LatLng[];
+  icon?: string;
+  options?: object;
+  DOM?: boolean;
   setViewBounds?: boolean;
   animated?: boolean;
 };
@@ -59,8 +68,8 @@ type HMapPolylineTyping = Pick<React.HTMLProps<HTMLElement>, any> & {
 
 type HMapCircleTyping = Pick<React.HTMLProps<HTMLElement>, any> & {
   coords: LatLng;
+  radius: number;
   options?: object;
-  radius?: number;
   setViewBounds?: boolean;
   animated?: boolean;
 };
@@ -84,10 +93,13 @@ type HMapRouteTyping = Pick<React.HTMLProps<HTMLElement>, any> & {
     mode: string;
     waypoints: LatLng[] | LatLng;
     representation: string;
+    routeAttributes?: string;
   };
   isoLine?: boolean;
   lineOptions?: object;
   markerOptions?: object;
+  returnResponse?: (response: any) => void;
+  returnWaypoints?: (waypoints: LatLng[]) => void;
   icons?:
     | string
     | {
