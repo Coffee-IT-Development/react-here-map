@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-here-map/static/css/main.caad5748.chunk.css",
-    "main.js": "/react-here-map/static/js/main.1aed978a.chunk.js",
-    "main.js.map": "/react-here-map/static/js/main.1aed978a.chunk.js.map",
+    "main.js": "/react-here-map/static/js/main.f5b07026.chunk.js",
+    "main.js.map": "/react-here-map/static/js/main.f5b07026.chunk.js.map",
     "runtime-main.js": "/react-here-map/static/js/runtime-main.c8e2e7ee.js",
     "runtime-main.js.map": "/react-here-map/static/js/runtime-main.c8e2e7ee.js.map",
-    "static/js/2.00639bee.chunk.js": "/react-here-map/static/js/2.00639bee.chunk.js",
-    "static/js/2.00639bee.chunk.js.map": "/react-here-map/static/js/2.00639bee.chunk.js.map",
+    "static/js/2.c9a83547.chunk.js": "/react-here-map/static/js/2.c9a83547.chunk.js",
+    "static/js/2.c9a83547.chunk.js.map": "/react-here-map/static/js/2.c9a83547.chunk.js.map",
     "index.html": "/react-here-map/index.html",
-    "precache-manifest.39ac6ad718dc7b7f0eb53c8373fd4a0a.js": "/react-here-map/precache-manifest.39ac6ad718dc7b7f0eb53c8373fd4a0a.js",
+    "precache-manifest.ed121f02a38c8dfb1469e0a8c6c52b7f.js": "/react-here-map/precache-manifest.ed121f02a38c8dfb1469e0a8c6c52b7f.js",
     "service-worker.js": "/react-here-map/service-worker.js",
     "static/css/main.caad5748.chunk.css.map": "/react-here-map/static/css/main.caad5748.chunk.css.map",
-    "static/js/2.00639bee.chunk.js.LICENSE.txt": "/react-here-map/static/js/2.00639bee.chunk.js.LICENSE.txt"
+    "static/js/2.c9a83547.chunk.js.LICENSE.txt": "/react-here-map/static/js/2.c9a83547.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c8e2e7ee.js",
-    "static/js/2.00639bee.chunk.js",
+    "static/js/2.c9a83547.chunk.js",
     "static/css/main.caad5748.chunk.css",
-    "static/js/main.1aed978a.chunk.js"
+    "static/js/main.f5b07026.chunk.js"
   ]
 }
